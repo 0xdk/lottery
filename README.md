@@ -1,1 +1,3 @@
-# lottery
+# lottery 
+
+lottery contract projcet

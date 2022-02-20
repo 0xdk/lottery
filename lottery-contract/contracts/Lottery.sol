@@ -35,10 +35,12 @@ contract Lottery {
         index = random() % players.length;
         players[index].transfer(address(this).balance);
         winner = players[index];
-        players = new address payable[](0);
     }
 
     function showPlayers() public view returns (address payable[] memory) {
         return players;
+    }
+    function reset() public Owner{
+        players = new address payable[](0);
     }
 }

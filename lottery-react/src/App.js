@@ -44,7 +44,7 @@ class App extends React.Component {
       from: accounts[0],
     });
 
-    this.setState({ message: "A winner has been picked!" });
+    this.setState({ message: "A Winner have selected"})
   };
 
   render() {
